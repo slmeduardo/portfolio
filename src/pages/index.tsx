@@ -9,16 +9,17 @@ import {
   SiFigma,
 } from "react-icons/si"
 import Header from "../components/Header"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <div className="dark:bg-slate-900 bg-gray-100 h-screen text-gray-500">
+    <div className="dark:bg-slate-900 bg-gray-100 text-gray-500">
       <Header />
-      <section className="mx-10 my-32">
+      <section className="mx-96 my-32">
         <div>
           <h3 className="text-2xl dark:text-gray-400">Hello Folks! 👋</h3>
           <h1 className="text-6xl text-gray-700 dark:text-gray-300 font-bold">
-            I'm Eduardo Cardoso
+            I'm <span className="text-orange-500">Eduardo</span> Cardoso,
           </h1>
           <p className="mt-5 dark:text-gray-400">
             a passionate front-end developer from Brazil.
@@ -58,6 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }
