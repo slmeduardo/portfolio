@@ -15,7 +15,7 @@ export default function Home() {
   const currentTheme = theme === "system" ? systemTheme : theme
 
   return (
-    <header className="flex justify-between dark:text-gray-300 p-5 items-center">
+    <header className="flex justify-between dark:text-gray-300 p-5">
       <div className="flex items-center">
         <h1 className="text-xl font-bold cursor-pointer">
           <Link href="/">
@@ -23,12 +23,12 @@ export default function Home() {
             <span className="text-orange-500">dev</span>
           </Link>
         </h1>
-        <ul className="text-orange-500 text-xs font-semibold flex ml-5 gap-5">
-          <li className="hover:text-orange-400 cursor-pointer">
+        <ul className="text-orange-400 text-xs font-semibold flex ml-5 gap-5">
+          <li className="hover:text-orange-200 cursor-pointer">
             <Link href="/projects">Projects</Link>
           </li>
-          <li className="hover:text-orange-400 cursor-pointer">About</li>
-          <li className="hover:text-orange-400 cursor-pointer">Contact</li>
+          <li className="hover:text-orange-200 cursor-pointer">About</li>
+          <li className="hover:text-orange-200 cursor-pointer"><Link href="/contact">Contact</Link></li>
         </ul>
       </div>
       <div className="flex items-center">
