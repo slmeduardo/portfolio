@@ -1,4 +1,4 @@
-import { IoDocumentTextOutline } from "react-icons/io5"
+import { IoDocumentTextOutline } from "react-icons/io5";
 import {
   SiReact,
   SiTypescript,
@@ -7,9 +7,11 @@ import {
   SiVisualstudiocode,
   SiStyledcomponents,
   SiFigma,
-} from "react-icons/si"
-import Header from "../components/Header"
-import Footer from "@/components/Footer"
+} from "react-icons/si";
+import Header from "../components/Header";
+import Footer from "@/components/Footer";
+
+export const gitHubURL = new URL("https://github.com/slmeduardo");
 
 export default function Home() {
   return (
@@ -61,5 +63,5 @@ export default function Home() {
       </section>
       <Footer />
     </div>
-  )
+  );
 }

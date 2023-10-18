@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react"
-import { useTheme } from "next-themes"
-import { BsFillSunFill, BsFillMoonStarsFill, BsGithub } from "react-icons/bs"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import { BsFillSunFill, BsFillMoonStarsFill, BsGithub } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Home() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
-  if (!mounted) return null
-  const currentTheme = theme === "system" ? systemTheme : theme
+  if (!mounted) return null;
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <header className="flex justify-between dark:text-gray-300 p-5">
@@ -27,8 +27,12 @@ export default function Home() {
           <li className="hover:text-orange-200 cursor-pointer">
             <Link href="/projects">Projects</Link>
           </li>
-          <li className="hover:text-orange-200 cursor-pointer">About</li>
-          <li className="hover:text-orange-200 cursor-pointer"><Link href="/contact">Contact</Link></li>
+          <li className="hover:text-orange-200 cursor-pointer">
+            <Link href="/about">About</Link>
+          </li>
+          <li className="hover:text-orange-200 cursor-pointer">
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
       <div className="flex items-center">
@@ -42,11 +46,11 @@ export default function Home() {
             </button>
           ) : (
             <button className="p-3" onClick={() => setTheme("dark")}>
-              <BsFillMoonStarsFill size={20} color="black" />
+              <BsFillMoonStarsFill size={20} />
             </button>
           )}
         </button>
       </div>
     </header>
-  )
+  );
 }
