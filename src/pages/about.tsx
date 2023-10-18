@@ -17,7 +17,7 @@ export default function about() {
         </div>
         <div className="mt-7">
           <Image
-            src="/../assets/imgs/me.jpeg"
+            src="/assets/imgs/me.jpeg"
             width={500}
             height={500}
             alt="Picture of the author"

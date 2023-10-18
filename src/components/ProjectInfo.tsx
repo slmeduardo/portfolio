@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { TiArrowRightThick } from "react-icons/ti";
 
-type ProjectInfoType = {
-  title: String;
-  subtitle: String;
-  desc: String;
-  link: URL;
+export type ProjectInfoType = {
+  title: string;
+  subtitle: string;
+  desc: string;
+  link: string;
 };
 
 export default function ProjectInfo({
