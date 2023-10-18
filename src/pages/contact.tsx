@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "../components/Header";
-import ProjectInfo from "@/components/ProjectInfo";
 
 import { CiShare1 } from "react-icons/ci";
 import Link from "next/link";
