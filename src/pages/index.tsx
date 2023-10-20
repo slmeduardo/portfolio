@@ -11,8 +11,6 @@ import {
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
 
-export const gitHubURL = new URL("https://github.com/slmeduardo");
-
 export default function Home() {
   return (
     <div className="dark:bg-slate-900 bg-gray-100 text-gray-500">

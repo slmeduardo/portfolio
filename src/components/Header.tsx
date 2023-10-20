@@ -36,9 +36,13 @@ export default function Home() {
         </ul>
       </div>
       <div className="flex items-center">
-        <div className="p-3">
+        <Link
+          href={process.env.NEXT_PUBLIC_GITHUB_URL}
+          target="_blank"
+          className="p-3"
+        >
           <BsGithub size={20} />
-        </div>
+        </Link>
         <button>
           {currentTheme === "dark" ? (
             <button className="p-3" onClick={() => setTheme("light")}>
